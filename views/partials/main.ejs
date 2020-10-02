@@ -1,0 +1,43 @@
+<!--Main content for the home page-->
+<% if (title == 'Home') { %>
+    <p>My mission is to learn, and eventually master several programming languages</p>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>C#</li>
+      <li>C++</li>
+      <li>Java</li>
+    </ul>
+    <a class="btn btn-primary" href="/about" role="button">About Me</a>
+  <% } %> 
+
+  <!--Main content for the about page-->
+<% if (title == 'About') { %>
+  <img src="/Assets/images/me.jpg" alt="Photo of Curtis Sloan next to the Bluenose II in Lunenburg" width="450" height="409">
+  <p>Curtis Sloan</p>
+  <p>I am a student studying Software Enginnering at Centennial College. I hope to work as a backend developer for a big name company, such as google. One day I hope to start my own company. I am a gamer and food connoisseur </p>
+  <a class="btn btn-primary" href="/Assets/Resume.pdf" target="_blank" role="button">Resume</a>
+<% } %> 
+
+<!--Main content for the projects page-->
+<% if (title == 'Projects') { %>
+  <img src="/Assets/images/web1.PNG" alt="An online web form" class="image" width="539" height="562">
+  <p >This is a web form I created for one of my classes. (COMP 213) I learned a lot in trying to make this, as I wanted my project to be unique so I taught myself more features than the rest of class. </p>
+  <a class="btn btn-primary" href="http://studentweb.cencol.ca/csloan4/Project4/Project04.html" target="_blank" role="button">Link</a>
+  <p id="text1"></p>
+  <img src="/Assets/images/Clock.GIF" alt="A still of an anlog clock" class="image1">
+  <p  id="text2">This is a fully functional analog clock that I created use a flexible software sketchbook called Processing. This was a simple yet, really fun project to do.</p>
+  <img class="image" src="/Assets/images/capture.PNG" alt="">
+  <p id="text3">This a capture of code to work in progress. Its a simple text based combat game with a basic leveling system, lots of loot like weapons and armor, and magic. The whole program is writen in Python.</p>
+<% } %> 
+
+<!--Main content for the services page-->
+<% if (title == "Services") { %>
+  <p>Services I offer / would like to do professionally </p>
+  <ul>
+    <li>programming</li>
+    <li>Backend development</li>
+    <li>Video game development</li>
+    <li>Mobile app development</li>
+  </ul>
+<% } %> 

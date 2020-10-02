@@ -1,0 +1,33 @@
+<%- include partials/Header.ejs %> 
+<%- include partials/Main_Nav.ejs %> 
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to the <%= title %> page</h1>
+    <p class="lead">Here you can learn all about <%= page_des %> </p>
+  </div>
+</div>
+
+<div class="center">
+
+    <form action="mailto:notcurtis.sloan@gmail.com" method="post">
+        <fieldset>
+          <legend>Personal Infomation</legend>
+            <label >Curtis Sloan</label> <br>
+            <label>Email:</label>
+            <a href="mailto:notcurtis.sloan@gmail.com">NotCurtis.Sloan@gmail.com</a> <br>
+            <label>Cell Phone: </label>
+            <a href="tel:613-290-7542">(613)290-7542</a> <br>
+
+            <textarea name="txtEmail" id="email" cols="50" rows="8" required="required">Compose Email here.</textarea> <br>
+            <input type="submit">
+            <a class="btn btn-primary" href="/Home" role="button">Home</a>
+
+        </fieldset>
+      </form>
+
+</div>
+
+
+<%- include partials/Bottom_Nav.ejs %> 
+<%- include partials/Footer.ejs %> 
