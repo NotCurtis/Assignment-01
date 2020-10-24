@@ -16,7 +16,7 @@ module.exports.displayContactList = (req, res, next) => {
         else
         {
             //console.log(contactList)
-            res.render('business/business-contact', {title: 'Contact List', ContactsList: contactList});
+            res.render('business/business-contact', {title: 'Contact List', ContactsList: contactList, displayName: req.user ? req.user.displayName : ''});
         }
     });
 }
